@@ -1,0 +1,788 @@
+* {
+    box-sizing: border-box; /* '*' applies to all elements, border-box makes sizing elements easier. EX: Makes assigned width includes margins, paddings, etc. */
+  }
+
+html, body {
+    background: #000000;
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.header-ribbon {
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    overflow: hidden;
+    background-color: #00000021;
+}
+
+
+    .header-ribbon a{
+        text-decoration: none;
+        padding: 0vw 0.5vw 0vw 0.5vw;
+        opacity:0.75;
+        z-index: 1;
+    }
+
+    .header-ribbon a:link {
+        color: #ffffffa4;
+    }
+    .header-ribbon a:visited {
+        color: #ffffffa4;
+    }
+    .header-ribbon:hover{
+        transition: .5s ease;
+        background-color: #000000;
+        color: #ffffff;
+        opacity:1;
+    }
+    .header-ribbon a:hover {
+        transition: .5s ease;
+        color: #ffffff;
+        opacity: 1;
+    }
+
+
+
+
+    .header-right {
+        font-family: 'Anton', sans-serif;
+        font-size: 1vw;
+        padding:1vw 2vw 1vw 1vw;
+        margin:0.5vw;
+        color: #ffffff;
+        float: right;
+        right: 0%;
+        top: 0%;
+    }
+
+
+.container {
+    width:100%;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-size: 5vw;
+    background: #242943;
+    color: #ffffffbe;
+    margin: 0vw;
+    padding: 5vw 0vw 1vw 0vw;
+
+}
+
+    .header .header-big {
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        font-size: 6vw;
+        color: #ffffffb7;
+        margin: 0vw;
+        padding: 3vw 0vw 3vw 0vw;
+    }
+
+    .header .header-normal {
+        font-family: 'Chilanka', cursive;
+        text-align: center;
+        font-size: 3vw;
+        margin: -1vw;
+    }
+
+    .header .header-small{
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
+        font-size: 1.5vw;
+        margin: 2vw 0vw 0vw;
+    }
+
+    .header .header-highlight1{
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-size: 4vw;
+        color: #ffffff;
+    }
+
+    .header .header-highlight1-small{
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-size: 2vw;
+        color: #ffffff;
+
+    }
+
+    .header .header-div1{
+        background: #393e57;
+        margin:0 auto;
+        min-height: 6.5vw;
+    }
+
+.content {
+    margin: 0vw;
+    padding: 0vw;
+    width:100%;
+    overflow:auto;
+}
+    .content .smallest-text {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 0.8vw;
+        font-weight: bold;
+        text-align: center;
+        margin: 0.2vw;
+        color: #ffffff;
+    }
+
+    .content .smaller-text {
+        font-family: 'Titillium Web', sans-serif;font-family: 'Titillium Web', sans-serif;
+        font-size: 1vw;
+        text-align: center;
+        margin: 0.4vw;
+        color: #e6e6e6;
+    }
+
+    .content .small-text {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.2vw;
+        text-align: center;
+        margin: 0.4vw;
+        color: #ffffff;
+    }
+
+    .content .brown{
+        background-color: rgb(49, 49, 49);
+    }
+
+    .content .black{
+        background-color: rgb(34, 34, 34);
+    }
+
+    .content .deepblack{
+        background-color: rgb(0, 0, 0);
+    }
+
+    .content .lightblue{
+        background-color: #8ea9e8;
+    }
+
+    .content .lightgreen{
+        background-color: #87c5a4;
+    }
+
+    .content .lightpink{
+        background-color: #8d82c4;
+    }
+
+    .content .lightorange{
+        background-color: #ec8d81;
+    }
+
+    .content .lightblack{
+        background-color: #333333;
+    }
+
+    .content .indigo{
+        background-color: rgb(76, 0, 121);
+    }
+    .content .main-banner {
+        padding: 3vw 0vw 0vw 0vw;
+        margin: 0vw;
+        float: left;
+        width:100%;
+    }
+        .main-banner h1{
+            margin: 0vw auto;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2vw;
+            text-align: left;
+            color: #ffffff;
+        }
+
+    .content .miniguide {
+        padding: 0vw;
+        margin: 0vw;
+        float: left;
+        width:100%;
+    }
+        .miniguide h2{
+            display: inline-block;
+            margin: 0vw auto;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1vw;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+        .miniguide h4{
+            display: inline-block;
+            margin: 0vw 0.5vw;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 0.8vw;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+    .content h3{
+        margin: 0vw auto;
+        padding: 0vw;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 2vw;
+        color:  rgb(235, 235, 235);
+    }
+
+    .box3 hr, .box4 hr{
+        margin: 0vw auto;
+        padding: 0vw;
+        border: 0.2vw solid  rgb(235, 235, 235);
+    }
+
+    .box3 p, .box4 p{
+        margin: 0vw auto;
+        padding: 0vw;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1vw;
+        text-align: justify;
+        color:  rgb(235, 235, 235);
+    }
+
+    .box3n4-content {
+        position: relative;
+        top: 50%; /*puts it under the middle line of div*/
+        transform: translateY(-50%); /*shift upwards halve of object's height */
+    }
+
+    .content hr{
+        margin: 0vw auto;
+        color: #ffffff;
+    }
+
+    .content .box {
+        position: relative;
+        padding: 3vw;
+        width: 33.33%;
+        height: 43vw;
+        margin: 0vw;
+        float: left;
+
+    }
+
+    .content .box2 {
+        position: relative;
+        padding: 3vw;
+        width: 33.33%;
+        height: 43vw;
+        margin: 0vw;
+        float: left;
+    }
+
+    .content .box3{
+        position: relative;
+        z-index: 0;
+        padding: 3vw;
+        width: 40%;
+        height: 25vw;
+        margin: 0vw;
+        float: left;
+    }
+
+    .content .box4{
+        position: relative;
+        z-index: 0;
+        padding: 3vw;
+        width: 60%;
+        height: 25vw;
+        margin: 0vw;
+        float: left;
+    }
+
+        .content .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: black;
+        }
+
+            .box3:hover .overlay,
+            .box4:hover .overlay{
+                opacity: 0.5;
+            }
+
+            .box3:hover h3,
+            .box4:hover h3,
+            .box3:hover p,
+            .box4:hover p{
+                color: rgb(255, 255, 255)
+            }
+
+            .box3:hover hr,
+            .box4:hover hr{
+                border: 0.2vw solid  #ffffff;
+            }
+
+            .comingsoon h3{
+                position: absolute;
+                opacity:0;
+                font-size: 400%;
+                top:40%;
+                left:25%;
+                text-align: center;
+                margin: auto;
+            }
+            .box3 .overlay.comingsoon:hover h3,
+            .box3 .overlay.comingsoon:hover{
+                transition: .5s ease;
+                opacity:1;
+                z-index:2;
+            }
+
+    .box .box-content {
+        background-color: rgb(129, 128, 128);
+        padding: 3vw;
+        height: 100%;
+    }
+
+    .box .box-content td{
+        position: relative;
+    }
+
+        .box-content .colon-table tr:hover td{
+            text-decoration: none;
+            transition: .5s ease;
+            font-size: 1.2vw;
+            color: rgb(107, 255, 206)
+        }
+
+    .box h1 {
+        z-index: 1;
+        position: relative;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.75vw;
+        text-align: center;
+        margin: 0vw;
+        color: #ffffff;
+    }
+
+        .box .box-music {
+            position: relative;
+            background-color: rgb(76, 0, 121);
+            padding: 3vw;
+            height: 100%;
+        }
+
+        .box .music-content{
+            position: relative;
+        }
+
+        .box .box-book {
+            position: relative;
+            background-color: rgb(75, 184, 151);
+            padding: 3vw;
+            height: 100%;
+        }
+
+        .box .box-book .bookdiv {
+            position: relative;
+            height: 26vw;
+            overflow: auto;
+            margin: 0 auto;
+            padding: 1vw 1vw 1vw 2.5vw;
+            background-color: rgb(6, 65, 4);
+        }
+
+            .anim1 {
+                opacity: 0.8;
+            }
+            .anim1:hover {
+                transition: .5s ease;
+                font-size: 1.3vw;
+                color: rgb(255, 255, 255);
+                opacity: 1;
+            }
+
+    .box .banner1{
+        background-color: rgba(100, 0, 231, 0.438);
+        margin:0 auto;
+        padding: 1vw;
+    }
+
+    .banner1 h1{
+        position: relative;
+    }
+
+    .box .banner2{
+        background-color: rgb(0, 117, 0);
+        margin:0 auto;
+        padding: 1vw;
+    }
+
+    .box .box-content img {
+        margin: 0.2 vw ;
+        padding:0vw;
+    }
+
+    .box .box-content hr {
+        margin: 0.2vw;
+        padding:0vw;
+    }
+
+    .colon-table {
+        margin: 0 auto;
+    }
+    .colon-table td {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8vw;
+        margin: 0.2vw;
+        color: #e6e6e6;
+        width:33.33%;
+    }
+
+
+    .colon-table .colon {
+        text-align: center;
+    }
+
+        .box-music .overlay {
+            position: absolute;
+            z-index:0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgb(0, 0, 0);
+        }
+
+
+
+    .box2 .bio-content {
+        position: relative;
+        background-color: rgb(19, 129, 163);
+        padding: 3vw;
+        height: 100%;
+    }
+
+    .box2 .other-content {
+        position: relative;
+        padding: 0vw;
+        height: 100%;
+    }
+
+    .box2 .banner1{
+        background-color: rgb(4, 151, 196);
+        margin:0 auto;
+        padding: 1vw;
+    }
+
+    .box2 .banner2{
+        background-color: rgb(193, 0, 231);
+        margin:0 auto;
+        padding: 1vw;
+    }
+
+    .box2 .banner3{
+        background-color: rgb(201, 0, 43);
+        margin:0 auto;
+        padding: 1vw;
+    }
+
+    .box2 h1 {
+        position: relative;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.75vw;
+        text-align: center;
+        margin: 0vw;
+        color: #ffffff;
+    }
+
+    .box2 h2 {
+        position: relative;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 0.9vw;
+        text-align: left;
+        padding: 0.25vw 0 0 1.5vw;
+        margin: 0.2vw;
+        color: #ffffff;
+    }
+
+    .box2  p {
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8vw;
+        text-align: justify;
+        text-decoration: none;
+        padding: 0 1.5vw 0 1.5vw;
+        margin: 0.2vw;
+        color: #e6e6e6;
+    }
+
+    .box2  .quote {
+        font-size: vw;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .box2  a{
+        text-decoration: none;
+    }
+
+    .box2 section{
+        visibility:visible;
+    }
+
+    .box2  .tips{
+        position: relative;
+        margin: 0 auto;
+        font-weight: normal;
+        font-family: 'Hepta Slab', cursive;
+        font-size: 0.8vw;
+        text-align: center;
+        color: rgb(211, 211, 211)
+    }
+
+        .box2 a:hover p{
+            text-decoration: none;
+            transition: .5s ease;
+            font-size: 1vw;
+            color: rgb(255, 89, 117)
+        }
+
+        .box2 a:hover .quote{
+            text-decoration: none;
+            transition: .5s ease;
+            font-size: 1.2vw;
+            color: rgb(250, 174, 86)
+        }
+
+
+        .box2 section:hover h2{
+            text-decoration: none;
+            transition: .5s ease;
+            font-size: 1.2vw;
+            color: rgb(255, 115, 201)
+        }
+
+        .box2 section:hover p{
+            text-decoration: none;
+            transition: .5s ease;
+            font-size: 1vw;
+            color: rgb(231, 112, 255)
+        }
+
+        .box2 .bio-content section:hover p{
+            transition: .5s ease;
+            font-size: 1.2vw;
+            color: rgb(80, 255, 226)
+        }
+
+        .box2 .bio-content section:hover .quote{
+            transition: .5s ease;
+            font-size: 1vw;
+            color: greenyellow
+        }
+
+        .box .box-content:hover .overlay,
+        .box .box-book:hover .overlay,
+        .box .box-music:hover .overlay,
+        .box2 .bio-content:hover .overlay,
+        .box2 .other-content:hover .overlay{
+            transition: .5s ease;
+            opacity:0.4;
+        }
+
+        .box2 .overlay {
+            position: absolute;
+            z-index:0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: black;
+        }
+
+
+/* FOOTER CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5vw;
+    text-align: center;
+    margin: 0vw;
+    color: #e6e6e6;
+}
+
+    .footer h2 {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 2vw;
+        text-align: center;
+        margin: 0.2vw;
+        color: #e6e6e6;
+    }
+
+    .footer h4 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 150%;
+        font-weight: normal;
+        text-align: left;
+        margin: 5%;
+        color: #bddcff;
+    }
+
+    .footer a{
+        text-decoration: none;
+    }
+
+    .footer p {
+        font-family: 'Inconsolata', monospace;
+        font-size: 1vw;
+        text-align: center;
+        margin: 0.2vw;
+        color: #e6e6e6;
+    }
+
+    .footer .footer-intro {
+        width:100%;
+        background-color: rgb(40, 33, 112);
+        margin: 0vw auto;
+        padding: 1vw;
+        display: block;
+    }
+
+    .footer .column{
+        float: left;
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        padding: 2vw;
+        background-color: rgb(26, 13, 73);
+        height: 38vw;
+    }
+
+    .contact-form{
+        position: relative;
+        height:100%;
+        width:100%;
+    }
+        .contact-form label,
+        .contact-form input[type=submit]{
+            text-align: left;
+            font-size: 150%;
+            font-family: 'Open Sans', sans-serif;
+            display: block;
+            margin: 0.5vw 1vw;
+        }
+
+        .contact-form input[type=submit]{
+            left:35%;
+            right:40%;
+            top:93%;
+            width:25%;
+            height: 2.5vw;
+            background: transparent;
+            border: 0.05vw solid  rgb(235, 235, 235);
+            color: white;
+            text-align: center;
+            position: absolute;
+        }
+
+            .contact-form input[type=submit]:hover {
+                border: 0.3vw solid  rgb(82, 255, 255);
+                color: rgb(82, 255, 255);
+                transition: 0.5s ease;
+            }
+
+        .contact-form .sub-column{
+            float:left;
+            display: block;
+            width: 50%;
+            padding: 0vw 1vw;
+            margin: 1vw 0vw;
+        }
+
+    .footer input[type=text],
+    .footer select,
+    .footer textarea {
+        padding:0.5vw;
+        width: 100%;
+        float:left;
+        border: 0.1vw solid #ccc;
+        color: white;
+        background-color: #393e57;
+        resize: vertical;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: rgb(196, 196, 196);
+            opacity: 1; /* Firefox */
+            font-size: 150%;
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: rgb(196, 196, 196);
+            font-size: 150%;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: rgb(196, 196, 196);
+            font-size: 150%;
+        }
+
+    .footer input[type=text],
+    .footer select{
+        height:3vw;
+    }
+
+    .contact-info .footer hr{
+        margin: 3vw;
+    }
+
+    .footer hr{
+        margin: 1vw 0vw;
+    }
+
+    .footer ul{
+        margin: auto;
+        width:40%;
+    }
+
+        .footer ul li:hover h4{
+            font-size: 250%;
+            transition: 0.5s ease;
+            color: rgb(82, 255, 255);
+        }
+
+    .footer .small-hr{
+        margin: 0.5vw auto;
+        width:30%;
+        z-index: 1;
+        height:0.02vw;
+    }
+
+    .footer .title-entry{
+        position: relative;
+        padding:1%;
+    }
+
+    .footer img{
+        left: 40%;
+        top: 25%;
+        position: absolute;
+    }
